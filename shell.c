@@ -1,8 +1,3 @@
-//
-// Operating Systems - Shell
-// Madhav Datt 14CS30015
-//
-
 #include <stdlib.h>
 #include <stdbool.h>
 #include <unistd.h>
@@ -406,7 +401,7 @@ int execute_command(char** args)
     // exit: exit shell
     else if (strcmp(args[0], "exit") == 0)
     {
-        exit(EXIT_SUCCESS);
+        exit(EXIT_FAILURE);
     }
 
     // mkdir: create new directory
